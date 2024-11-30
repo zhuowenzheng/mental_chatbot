@@ -13,7 +13,6 @@ app = FastAPI()
 llm = Llama(model_path="./Llama-3-Mental-Therapy-Cat-8B.Q8_0.gguf")
 
 
-
 @app.post("/chat")
 async def chat(request: Request):
     # Get request data
